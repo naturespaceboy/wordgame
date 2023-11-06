@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(1700.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.play-button {
+    
+    max-width: 600px; 
+    width: 100px;
+    padding: 20px;
+    border-radius: 50px; 
+    margin-top: 180px;
+    background-color: #ffbb00;
+    color: #ffffff; 
+    border: none;
+    background-size: 100%;
+    position: relative;
+    font-weight: bold; /
+    font-family: 'Press Start 2P', cursive;
+    
+    text-transform: uppercase; 
+    text-aligncenter; 
+    cursor: pointer; 
+    transition: background-color 0.3s; /
+    animation: floatAnimation 2s infinite alternate;
+    transition: transform 0.2s, font-size 0.2s, font-family 0.2s;
+    
+}
+
+
+
+.play-button:hover {
+    background-color: #fff200; 
+    transform: scale(1.05); 
+    font-size: 1.2em; 
+    font-family: 'Arial', sans-serif; 
+    width: 200px;
+    
+   
+}
+
+
+.game-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.game-popup iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+.floating-text {
+    display: flex;
+    flex-direction: row;
+    background-size: contain;
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    font-family: 'Bungee Spice', sans-serif;
+    animation: floatAnimation 2s infinite alternate;
+    align-items: center;
+    
+}
+
+
+@keyframes floatAnimation {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+.hidden {
+    display: none;
+}
+
+
+
+.music-button {
+    font-size: 24px;
+    margin-top: 10px;
+    max-width: 600px; 
+    margin-left: 50px;
+    width: 100px;
+    padding: 20px;
+    border-radius: 50px; 
+    margin-top: 180px;
+    background-color: #ffbb00;
+ 
+    border: none;
+    background-size: 100%;
+    font-weight: bold; /
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer; 
+    transition: background-color 0.3s; /
+    animation: floatAnimation 2s infinite alternate;
+    transition: transform 0.2s, font-size 0.2s, font-family 0.2s;
+    
+}
+.music-button:hover {
+    background-color: #fff200; 
+    transform: scale(1.05); 
+    font-size: 1.2em; 
+    font-family: 'Arial', sans-serif; 
+    width: 200px;
+    
+   
+}
+.fa-regular.fa-circle-play {
+    font-size: 2em; 
+}
+
+
+
+
+
+

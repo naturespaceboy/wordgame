@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartUp</title>
+    <link rel="stylesheet" href="back.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js">
+</head>
+<body>
+    
+    <button class="play-button" onclick="openGamePage()"><i class="fa-regular fa-circle-play"></i></button>
+
+    <div class="game-popup" id="gamePopup">
+        <iframe src="Index.html"></iframe>
+    </div>
+    <div class="floating-text" id="floatingText">Word Spelling Game</div>
+    <button class="music-button" onclick="toggleMute()"><i class="fa-solid fa-music" style="color: #ffffff;"></i></button>
+    <audio id="backgroundMusic" src="music.mp3" autoplay loop></audio>
+
+    <script src="function.js"></script>
+
+    <script>
+        function toggleMute() {
+            var audio = document.getElementById("backgroundMusic");
+            audio.muted = !audio.muted;
+        }
+    </script>
+    
+</body>
+</html>
